@@ -12,7 +12,7 @@ len equ $ - mensage
 _start:
     mov eax, 4 					;	SYS_write
     mov ebx, 1 					;	File descriptor number (1=stdout)
-    mov ecx, mensage 			;	Pointer for the string.
+    mov ecx, mensage            ;	Pointer for the string.
     mov edx, len 				;	Mensage len
     int 0x80
 
